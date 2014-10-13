@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{3480ABFD-000A-4C4A-90B6-476DCBF9BEC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{992F4121-1626-4806-AFA9-FBB0D078704C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResXFileCodeGeneratorEx.Common", "src\ResXFileCodeGeneratorEx.Common\ResXFileCodeGeneratorEx.Common.csproj", "{387D7726-06E5-4CF4-8DB2-A625DAB4660D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResXFileCodeGeneratorEx", "src\ResXFileCodeGeneratorEx\ResXFileCodeGeneratorEx.csproj", "{A8636D77-B876-4E6A-863D-8C924E40955C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{992F4121-1626-4806-AFA9-FBB0D078704C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResXFileCodeGeneratorExPackage", "src\ResXFileCodeGeneratorExPackage\ResXFileCodeGeneratorExPackage.csproj", "{D659C39B-2FE2-4EBB-80CF-96EC0B145424}"
 EndProject

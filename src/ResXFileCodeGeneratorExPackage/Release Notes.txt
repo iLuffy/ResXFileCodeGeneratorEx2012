@@ -5,6 +5,8 @@ One of the great new features of the Visual Studio .NET IDE is a custom tool cal
 
 New in this version:
  - Visual Studio 2012 integration.
+ - Visual Studio 2013 integration.
 
 Requirements:
  - Visual Studio 2012
+ - Visual Studio 2013
