@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 [assembly: Guid("f1cadb04-fc5b-491a-b2e4-fc3954925864")]
 

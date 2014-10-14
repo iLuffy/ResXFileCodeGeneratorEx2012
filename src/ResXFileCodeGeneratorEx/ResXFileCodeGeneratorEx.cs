@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
-using VSLangProj80;
+using Microsoft.VisualStudio.TextTemplating.VSHost;
 
 namespace DMKSoftware.CodeGenerators
 {
@@ -11,9 +11,12 @@ namespace DMKSoftware.CodeGenerators
     [Guid("FF2F2841-D6A2-42b5-9E14-86AD00A2917E")]
 	[Description("Extended ResX Public File Code Generator")]
     //[CodeGeneratorRegistration(typeof(ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", VSConstants.UICONTEXT.CSharpProject_string, GeneratorRegKeyName = ".doml")]
-    [CodeGeneratorRegistration(typeof(ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", VSConstants.UICONTEXT.CSharpProject_string, GeneratesDesignTimeSource = true)]
-    [CodeGeneratorRegistration(typeof(ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", vsContextGuids.vsContextGuidVCSEditor, GeneratesDesignTimeSource = true)]
-    [ProvideObject(typeof(ResXFileCodeGeneratorEx))]
+    //[CodeGeneratorRegistration(typeof(ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", VSConstants.UICONTEXT.CSharpProject_string, GeneratesDesignTimeSource = true)]
+    //[CodeGeneratorRegistration(typeof(ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", vsContextGuids.vsContextGuidVCSEditor, GeneratesDesignTimeSource = true)]
+    //[ProvideObject(typeof(ResXFileCodeGeneratorEx))]
+    [ProvideCodeGenerator(typeof(DMKSoftware.CodeGenerators.ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", "", true)]
+    [ProvideCodeGeneratorExtension("ResXFileCodeGeneratorEx", ".resx", ProjectSystem = ProvideCodeGeneratorAttribute.CSharpProjectGuid)]
+    [ProvideCodeGeneratorExtension("ResXFileCodeGeneratorEx", ".resx", ProjectSystem = ProvideCodeGeneratorAttribute.VisualBasicProjectGuid)]
 	public class ResXFileCodeGeneratorEx : BaseResXFileCodeGeneratorEx
     {
 		/// <summary>

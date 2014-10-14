@@ -30,9 +30,9 @@ namespace Company.VSPackage2
     // in the Help/About dialog of Visual Studio.
     [InstalledProductRegistration("ResXFileCodeGeneratorEx Package", "Installs the ResXFileCodeGeneratorEx custom tool", "1.0", LanguageIndependentName = "ResXFileCodeGeneratorEx Package")]
     // This attribute is needed to let the shell know that this package exposes some menus.
-    [ProvideCodeGenerator(typeof(DMKSoftware.CodeGenerators.ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", "", true)]
-    [ProvideCodeGeneratorExtension("ResXFileCodeGeneratorEx", ".resx", ProjectSystem = ProvideCodeGeneratorAttribute.CSharpProjectGuid)]
-    [ProvideCodeGeneratorExtension("ResXFileCodeGeneratorEx", ".resx", ProjectSystem = ProvideCodeGeneratorAttribute.VisualBasicProjectGuid)]
+    //[ProvideCodeGenerator(typeof(DMKSoftware.CodeGenerators.ResXFileCodeGeneratorEx), "ResXFileCodeGeneratorEx", "", true)]
+    //[ProvideCodeGeneratorExtension("ResXFileCodeGeneratorEx", ".resx", ProjectSystem = ProvideCodeGeneratorAttribute.CSharpProjectGuid)]
+    //[ProvideCodeGeneratorExtension("ResXFileCodeGeneratorEx", ".resx", ProjectSystem = ProvideCodeGeneratorAttribute.VisualBasicProjectGuid)]
     [Guid("7077132D-1E2D-4E27-A23A-59EC7E16AA27")]
     public sealed class ResXFileCodeGeneratorExPackage : Package
     {
